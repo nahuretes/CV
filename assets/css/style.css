@@ -663,8 +663,8 @@ section .container {
   transition: 0.2s;
 }
 .boton-descarga .btn-neon:hover{
-  background: #39FF14;
-  box-shadow: 0 0 10px #39FF14, 0 0 40px #39FF14, 0 0 80px #39FF14;
+  background: #1ddf84;
+  box-shadow: 0 0 10px #18d26e, 0 0 40px #18d26e, 0 0 80px #18d26e;
   transition-delay: 1s;
 }
 .boton-descarga .btn-neon span{
@@ -676,7 +676,7 @@ section .container {
   left: -100%;
   width: 100%;
   height: 2px;
-  background: linear-gradient(90deg, transparent,#39FF14);
+  background: linear-gradient(90deg, transparent,#18d26e);
 }
 .boton-descarga .btn-neon:hover #span1{
   left: 100%;
@@ -687,7 +687,7 @@ section .container {
   right: -100%;
   width: 100%;
   height: 2px;
-  background: linear-gradient(270deg, transparent,#39FF14);
+  background: linear-gradient(270deg, transparent,#18d26e);
 }
 .boton-descarga .btn-neon:hover #span3{
   right: 100%;
@@ -699,7 +699,7 @@ section .container {
   right: 0;
   width: 2px;
   height: 100%;
-  background: linear-gradient(180deg,transparent,#39FF14);
+  background: linear-gradient(180deg,transparent,#18d26e);
 }
 .boton-descarga .btn-neon:hover #span2{
   top: 100%;
@@ -711,7 +711,7 @@ section .container {
   left: 0;
   width: 2px;
   height: 100%;
-  background: linear-gradient(360deg,transparent,#39FF14);
+  background: linear-gradient(360deg,transparent,#18d26e);
 }
 .boton-descarga .btn-neon:hover #span4{
   bottom: 100%;

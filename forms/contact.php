@@ -1,19 +1,6 @@
 <?php
-  /**
-  * Requires the "PHP Email Form" library
-  * The "PHP Email Form" library is available only in the pro version of the template
-  * The library should be uploaded to: vendor/php-email-form/php-email-form.php
-  * For more info and help: https://bootstrapmade.com/php-email-form/
-  */
 
-  // mail para que reciva el correo
   $receiving_email_address = 'nahueretes@gmail.com';
-
-  if( file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php' )) {
-    include( $php_email_form );
-  } else {
-    die( 'Unable to load the "PHP Email Form" Library!');
-  }
 
   $contact = new PHP_Email_Form;
   $contact->ajax = true;
@@ -23,15 +10,29 @@
   $contact->from_email = $_POST['email'];
   $contact->subject = $_POST['subject'];
 
-  // Uncomment below code if you want to use SMTP to send emails. You need to enter your correct SMTP credentials
-  /*
-  $contact->smtp = array(
-    'host' => 'example.com',
-    'username' => 'example',
-    'password' => 'pass',
-    'port' => '587'
-  );
-  */
+  mail($receiving_email_address, $subject, $message, $mailheader) or die("Error!");
+
+echo'
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Contact form</title>
+      <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+      <div class="container">
+          <h1>Thank you for contacting me. I will get back to you as soon as possible!</h1>
+          <p class="back">Go back to the <a href="index.html">homepage</a>.</p>
+          
+      </div>
+  </body>
+  </html>  ';
+
 
   $contact->add_message( $_POST['name'], 'From');
   $contact->add_message( $_POST['email'], 'Email');

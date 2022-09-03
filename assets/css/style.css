@@ -78,17 +78,51 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-block;
 }
 
-#header h2 {
-  font-size: 24px;
-  margin-top: 20px;
-  color: rgba(255, 255, 255, 0.8);
+
+
+/* Se agrega el agradecimiento por ver mi perfil*/
+
+
+
+ @keyframes typing {
+  from { width: 0 }
+  to { width:14.75em }
 }
 
-#header h2 span {
-  color: #fff;
-  border-bottom: 2px solid #18d26e;
-  padding-bottom: 6px;
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: yellowgreen }
 }
+
+#header h2 .wrapper {
+margin: 1em auto;  
+}
+
+#header h2 {
+width: 16ch;
+width: 14.75em;
+color: #18e018;
+white-space: nowrap;
+position: relative;
+overflow: hidden;
+animation: typing 4s steps(16, end); 
+}
+
+#header h2:before {
+font-family: 'FontAwesome';
+color: greenyellow;
+content: "\f054";}
+
+#header h2 span {
+border-right: .1em solid;
+color: #FFF;
+position:absolute;
+top:0;
+right:0;
+width:0;
+animation: blink-caret 1s step-end infinite;
+}
+/*finaliza el agradecimiento por ver mi perfil*/
 
 #header img {
   padding: 0;

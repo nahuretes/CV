@@ -655,7 +655,6 @@ section .container {
   position: relative;
   display: inline-block;
   padding: 15px 30px;
-  color: #fff;
   letter-spacing: 4px;
   text-decoration: none;
   font-size: 16px;
@@ -666,6 +665,7 @@ section .container {
   background: #1ddf84;
   box-shadow: 0 0 10px #18d26e, 0 0 40px #18d26e, 0 0 80px #18d26e;
   transition-delay: 1s;
+  color: #fff;
 }
 .boton-descarga .btn-neon span{
   position: absolute;

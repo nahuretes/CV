@@ -109,9 +109,10 @@ animation: typing 4s steps(16, end);
 }
 
 #header h2:before {
-font-family: 'FontAwesome';
+  font-family: "Font Awesome 5 Free";
+  content: '\f054';
 color: greenyellow;
-content: "\f054";}
+}
 
 #header h2 span {
 border-right: .1em solid;

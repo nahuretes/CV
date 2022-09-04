@@ -110,7 +110,7 @@ animation: typing 4s steps(16, end);
 
 #header h2:before {
   font-family: "Font Awesome 5 Free";
-  content: '\f054';
+  content: '\3e';
 color: greenyellow;
 }
 

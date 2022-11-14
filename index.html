@@ -652,15 +652,21 @@
         </div>
       </div>
 
-      <form action="mailto:nahueretes@gmail.com" method="post" name="form1">
-        <label for="nombre">Nombre: </label>
-  <input id="nombre" name="nombre" type="text" />
-  <label for="email">Email: </label>
-  <input id="email" name="nombre" type="text" />
-  ¿Qué te pareció la página?
-  <textarea id="opinion" name="opinion"></textarea>
-  <input name="Submit" type="submit" value="Enviar" />
-</form>
+
+        <form action="https://formsubmit.co/nahueretes@gmail.com" method="POST">
+          <input type="hidden" name="_next" value="https://www.instagram.com/_nahu">
+          <input type="hidden" name="_subject" value="Un Mail de mi CV!">
+          <input type="hidden" name="_template" value="box">
+          <input type="email" name="email" placeholder="Email Address">
+          <input type="hidden" name="_autoresponse" value="Hola! soy Nahuel Retes, este mail es solo para agradecerte por mirar mi CV">
+          <input type="text" name="name" required>
+          <input type="email" name="email" required>
+          <input type="email" name="email">
+          <!--Disable reCAPTCHA _captcha:
+          <input type="hidden" name="_captcha" value="false"> 
+          -->
+          <button type="submit">Send</button>
+     </form>
 
     </div>
   </section><!-- End Contact Section -->

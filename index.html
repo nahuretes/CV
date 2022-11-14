@@ -654,17 +654,41 @@
 
 
         <form action="https://formsubmit.co/nahueretes@gmail.com" method="POST">
+          <div class="form-row">
+            <div class="col-md-6 form-group">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required/>
+              <div class="validate"></div>
+            </div>
+            <div class="col-md-6 form-group">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" required/>
+              <div class="validate"></div>
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+            <div class="validate"></div>
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+            <div class="validate"></div>
+          </div>
+          <div class="mb-3">
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your message has been sent. Thank you!</div>
+          </div>
+          <!--redireccion a-->
           <input type="hidden" name="_next" value="https://www.instagram.com/_nahu">
+          <!--asunto del mail que yo recibiria-->
           <input type="hidden" name="_subject" value="Un Mail de mi CV!">
+          <!--templated del mail q yo recibiria -->
           <input type="hidden" name="_template" value="box">
-          <input type="email" name="email" placeholder="Email Address" required>
-          <input type="hidden" name="_autoresponse" value="Hola! soy Nahuel Retes, este mail es solo para agradecerte por mirar mi CV, a la brevedad te lo respondere">
-          <input type="text" name="name" placeholder="Nombre"required>
-          <input type="text" name="texto" placeholder="Texto opcional del mensaje">
+          <!--Texto que se le va a enviar al que me mando un mail-->
+          <input type="hidden" name="_autoresponse" value="Hola! soy Nahuel Retes, este mail es solo para agradecerte por mirar mi CV, a la brevedad te lo respondere">          
           <!--Disable reCAPTCHA _captcha:
           <input type="hidden" name="_captcha" value="false"> 
           -->
-          <button type="submit">Send</button>
+          <div class="text-center"><button type="submit">Send</button></div>
      </form>
 
     </div>

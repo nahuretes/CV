@@ -672,8 +672,9 @@
           <div class="validate"></div>
         </div>
         
-        <!--redireccion a-->
-        <input type="hidden" name="_next" value="https://www.instagram.com/_nahu">
+        <!--redireccion a
+        <input type="hidden" name="_next" value="https://www.instagram.com/_nahu">-->
+
         <!--asunto del mail que yo recibiria-->
         <input type="hidden" name="_subject" value="Un Mail de mi CV!">
         <!--templated del mail q yo recibiria -->
@@ -686,7 +687,19 @@
         <!--Disable reCAPTCHA _captcha:-->
         <input type="hidden" name="_captcha" value="false"> 
 
-        <div class="text-center"><button type="submit">Send</button></div>
+        <div class="text-center"><button id="btn" type="submit"><p id="btnText">Send</p></button></div>
+        
+    <script type="text/javascript">
+        const btn = document.querySelector("#btn");
+        const btnText = document.querySelector("#btnText");
+  
+        btn.onclick = () => {
+            btnText.innerHTML = "Thanks";
+            btn.classList.add("active");
+        };
+    </script>
+
+
         <div class="mb-3">
           <div class="loading">Loading</div>
           <!--<div class="error-message"></div>-->

@@ -886,12 +886,12 @@ section .container {
   color: #18d26e;
 }
 
-.contact  {
+.contact {
   padding: 30px;
   background: rgba(255, 255, 255, 0.08);
 }
 
-.contact  .validate {
+.contact .validate {
   display: none;
   color: red;
   margin: 0 0 15px 0;
@@ -899,7 +899,7 @@ section .container {
   font-size: 13px;
 }
 
-.contact  .error-message {
+.contact .error-message {
   display: none;
   background: rgba(255, 255, 255, 0.08);
   background: #ed3c0d;
@@ -908,11 +908,11 @@ section .container {
   font-weight: 600;
 }
 
-.contact  .error-message br + br {
+.contact .error-message br + br {
   margin-top: 25px;
 }
 
-.contact  .sent-message {
+.contact .sent-message {
   display: none;
   background: rgba(255, 255, 255, 0.08);
   background: #18d26e;
@@ -955,40 +955,40 @@ section .container {
   background-color: rgba(255, 255, 255, 0.11);
 }
 
-.contact  input::-webkit-input-placeholder, .contact  textarea::-webkit-input-placeholder {
+.contact input::-webkit-input-placeholder, .contact textarea::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.3);
   opacity: 1;
 }
 
-.contact  input::-moz-placeholder, .contact  textarea::-moz-placeholder {
+.contact input::-moz-placeholder, .contact textarea::-moz-placeholder {
   color: rgba(255, 255, 255, 0.3);
   opacity: 1;
 }
 
-.contact  input:-ms-input-placeholder, .contact  textarea:-ms-input-placeholder {
+.contact input:-ms-input-placeholder, .contact textarea:-ms-input-placeholder {
   color: rgba(255, 255, 255, 0.3);
   opacity: 1;
 }
 
-.contact  input::-ms-input-placeholder, .contact  textarea::-ms-input-placeholder {
+.contact input::-ms-input-placeholder, .contact textarea::-ms-input-placeholder {
   color: rgba(255, 255, 255, 0.3);
   opacity: 1;
 }
 
-.contact  input::placeholder, .contact  textarea::placeholder {
+.contact input::placeholder, .contact textarea::placeholder {
   color: rgba(255, 255, 255, 0.3);
   opacity: 1;
 }
 
-.contact  input {
+.contact input {
   padding: 20px 15px;
 }
 
-.contact  textarea {
+.contact textarea {
   padding: 12px 15px;
 }
 
-.contact  button[type="submit"] {
+.contact button[type="submit"] {
   background: #18d26e;
   border: 0;
   padding: 10px 30px;
@@ -997,7 +997,7 @@ section .container {
   border-radius: 4px;
 }
 
-.contact  button[type="submit"]:hover {
+.contact button[type="submit"]:hover {
   background: #15bb62;
 }
 

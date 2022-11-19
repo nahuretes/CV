@@ -837,6 +837,23 @@ section .container {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+.form-row span{
+  font-size: 14px;
+  color: #18e018;
+}
+#submit-error{
+  color: #18e018;
+}
+.form-group span{
+  font-size: 14px;
+  color: #18e018;
+}
+
+.form-row span i {
+  color:#18e018;
+}
+
+
 .contact .info-box {
   color: #444444;
   padding: 20px;
@@ -937,8 +954,8 @@ section .container {
   margin: 0 10px -6px 0;
   border: 3px solid #18d26e;
   border-top-color: #eee;
-  -webkit-animation: animate-loading 1s linear infinite;
-  animation: animate-loading 1s linear infinite;
+  -webkit-animation: animate-loading 2s linear infinite;
+  animation: animate-loading 2s linear infinite;
 }
 
 .contact input, .contact textarea {

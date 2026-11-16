@@ -1141,13 +1141,16 @@ section .container {
 .credits a:hover {
   color: #fff;
 }
-/* Language switch (flag emoji) */
+/* Language switch (flag image: renders the same in every browser and in-app webviews) */
 .nav-menu a.lang-flag .flag,
 .mobile-nav a.lang-flag .flag {
-  font-family: "Apple Color Emoji", "Noto Color Emoji", "Segoe UI Emoji", sans-serif; /* Apple first: iOS/macOS use native flags; Noto webfont renders blank in Safari */
-  font-size: 20px;
-  line-height: 1;
+  display: inline-block;
+  width: 24px;
+  height: 16px;
+  border-radius: 2px;
   vertical-align: middle;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.25);
+  transition: filter 0.3s;
 }
 .nav-menu a.lang-flag:hover .flag,
 .mobile-nav a.lang-flag:hover .flag {

@@ -1144,7 +1144,7 @@ section .container {
 /* Language switch (flag emoji) */
 .nav-menu a.lang-flag .flag,
 .mobile-nav a.lang-flag .flag {
-  font-family: "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji", sans-serif;
+  font-family: "Apple Color Emoji", "Noto Color Emoji", "Segoe UI Emoji", sans-serif; /* Apple first: iOS/macOS use native flags; Noto webfont renders blank in Safari */
   font-size: 20px;
   line-height: 1;
   vertical-align: middle;

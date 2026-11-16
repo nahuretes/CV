@@ -1141,3 +1141,15 @@ section .container {
 .credits a:hover {
   color: #fff;
 }
+/* Language switch (flag emoji) */
+.nav-menu a.lang-flag .flag,
+.mobile-nav a.lang-flag .flag {
+  font-family: "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji", sans-serif;
+  font-size: 20px;
+  line-height: 1;
+  vertical-align: middle;
+}
+.nav-menu a.lang-flag:hover .flag,
+.mobile-nav a.lang-flag:hover .flag {
+  filter: brightness(1.15);
+}
